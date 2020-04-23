@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("filmmaker.css");
+/* CSS Document */
+html
+body{
+	margin: 0;
+}
+* {box-sizing: border-box;}
+
+h1{
+	font-size: 4.5em;
+	font-family: raleway, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	color: white;
+}
+h2{
+	font-size: 2em;
+	font-family: raleway, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	text-transform: uppercase
+}
+h3{
+	font-size: 1.5em;
+	letter-spacing: 25px;
+	font-family: raleway, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+h4{
+	font-size: 2em;
+	font-family: raleway, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	
+}
+p{
+	font-size: 1em;
+	font-family: raleway, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+ol{
+	list-style-type: none;
+}
+li{
+	display: inline	
+}
+#navbar {
+	overflow: hidden;
+	background-color: white;
+	padding: 60px 10px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 98;
+	list-style-type: none;
+}
+#navbar a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding-right: 25px;
+	padding-left: 25px;
+	text-decoration: none; 
+	font-family: raleway;
+	text-transform: uppercase;
+}
+#navbar #logo {
+	font-weight: 800;
+	transition: 0.4s;
+	font-size: 40px;
+	padding-left: 25px
+}
+#navbar a:hover {
+	letter-spacing: 5px;
+	color: gray
+}
+#navbar a:active {
+	color: black;
+}
+#navbar-right {
+	float: right;
+	font-weight: 100;
+	padding-right: 25px;
+}
+#designer{
+	font-weight: 800
+}
+	
+@media screen and (max-width: 580px) {
+	#navbar {
+		padding: 20px 10px !important;
+  }
+	#navbar a {
+   		float: none;
+    	display: block;
+    	text-align: left;
+  }
+	#navbar-right {
+    	float: none;
+  	}
+}
+
+.design_gallery{
+	padding: 150px 35px
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*Modal*/
+* {box-sizing: border-box}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	padding: 50px;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(256, 256, 256, 0.98);
+}
+
+/* Modal Content */
+.modal-content {
+	position: absolute;
+	left: 150px;
+	width: 100%;
+	max-width: 460px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	top: 400px;
+	left: 645px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.3s ease;
+	user-select: none;
+	-webkit-user-select: none;
+}
+/* Position the "prev button" to the left */
+.prev {
+  left: 100px;
+}
+/* On hover, fade arrow */
+.prev:hover,
+.next:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+	color: black;
+	font-size: 30px;
+	position: fixed;
+	top: 125px;
+	left: 800px;
+	font-family: raleway;
+	font-weight: 600;
+	text-transform: uppercase
+}
+
+.caption{
+	color: black;
+	font-size: 16px;
+	position: fixed;
+	top: 175px;
+	left: 800px;
+	font-family: raleway;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 1.5;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+	padding: 100px;
+	text-align: center;
+	background-color: white
+}
+.socials a:link{
+	padding: 10px;
+	color: black;
+	font-size: 25px;
+}
+.socials a:visited{
+	padding: 10px;
+	color: black;
+	font-size: 25px;
+}
+.socials a:hover {
+	color:gray;
+	padding: 10px;
+	font-size: 25px;
+}
+#copyright{
+	font-size:10px;
+	padding: 30px 0 0;
+}

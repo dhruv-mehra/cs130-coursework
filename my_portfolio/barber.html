@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ABOUT | Dhruv Mehra</title>
+	
+	<link rel="stylesheet" href="about.css">
+	
+	<link rel="stylesheet" href="https://use.typekit.net/wkt6rve.css">
+	
+	<script src="https://kit.fontawesome.com/56f76b372d.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+  			<li><a href="index.html" id="logo">Dhruv Mehra</a></li>
+			<nav id="navbar-right">
+				<ol>
+					<li><a href="work.html" id="work">work</a></li>
+					<li><a href="about.html" id="about">about</a></li>
+				</ol>
+			</nav>
+		</nav>
+  
+		<script>
+			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("navbar").style.padding = "15px 10px";
+					document.getElementById("logo").style.fontSize = "20px";
+					document.getElementById("navbar").style.fontSize = "10px";
+				} else {
+					document.getElementById("navbar").style.padding = "65px 10px";
+					document.getElementById("logo").style.fontSize = "35px";
+					document.getElementById("navbar").style.fontSize = "14px";
+				}
+			}
+		</script>
+	</header>
+	
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/haircuts/chop" style="min-width:320px;height:800px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+	
+	<footer>
+		<div class="socials">
+			<a href="https://vimeo.com/user94368193" title="Vimeo" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+			<a href="https://www.instagram.com/dhruvohno/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.imdb.com/name/nm7416997/?ref_=fn_al_nm_1" title="IMBd" target="_blank"><i class="fab fa-imdb"></i></a>
+			<a href="https://www.linkedin.com/in/dhruv-mehra-84b006187" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.facebook.com/dhruv.mehra.79230" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.youtube.com/channel/UCPyWI0IGNAqEx4sQTSIH9IQ" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="mailto:dhruvmehra8@gmail.com" title="Email" target="_top"><i class="fas fa-envelope"></i></a>
+		</div>
+		<p id="copyright">2019</p>
+	</footer>
+	
+</body>
+</html>

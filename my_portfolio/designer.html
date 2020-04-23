@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Designer | Dhruv Mehra</title>
+	
+	<link rel="stylesheet" href="designer.css">
+	
+	<link rel="stylesheet" href="https://use.typekit.net/wkt6rve.css">
+	
+	<script src="https://kit.fontawesome.com/56f76b372d.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+  			<li><a href="index.html" id="logo">Dhruv Mehra</a></li>
+			<nav id="navbar-right">
+				<ol>
+					<li><a href="work.html" id="filmmaker">Filmmaker</a></li>
+					<li><a href="designer.html" id="designer">Designer</a></li>
+					<li><a href="about.html" id="barber">Barber</a></li>
+				</ol>
+			</nav>
+		</nav>
+  
+		<script>
+			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("navbar").style.padding = "15px 10px";
+					document.getElementById("logo").style.fontSize = "20px";
+					document.getElementById("navbar").style.fontSize = "10px";
+					
+				} else {
+					document.getElementById("navbar").style.padding = "65px 10px";
+					document.getElementById("logo").style.fontSize = "35px";
+					document.getElementById("navbar").style.fontSize = "14px";
+				}
+			}
+		</script>
+	</header>
+	
+	<section class="design_gallery">
+		
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+  			<div class="column">
+    			<img src="images/design/Almost Maine@2x.png" alt="Almost, Maine" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<img src="images/design/Sexiled Together@2x.png" alt="Sexiled Together" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    			<img src="images/design/Guide_to_Grady_Drama.png" alt="We are Grady Drama" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    			<img src="images/design/South Pacific@2x.png" alt="South Pacific" onclick="openModal();currentSlide(13)" class="hover-shadow">
+    			<img src="images/design/Grady Drama Season Pass@2x.png" alt="Grady Drama Season Pass" onclick="openModal();currentSlide(17)" class="hover-shadow">
+  			</div>
+  			<div class="column">
+    			<img src="images/design/The Deep End@2x.png" alt="The Deep End" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				<img src="images/design/The Deep End Logo@2x.png" alt="The Deep End Logo" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    			<img src="images/design/3 Day Plays@2x.png" alt="3 Day Plays" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    			<img src="images/design/First Year Filmmakers@2x.png" alt="First Year Filmmakers" onclick="openModal();currentSlide(14)" class="hover-shadow">
+  			</div>
+  			<div class="column">
+    			<img src="images/design/Coffeehouse@2x.png" alt="Coffeehouse" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				<img src="images/design/The Other Side@2x.png" alt="The Other Side" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    			<img src="images/design/Grady Gaval Gala@2x.png" alt="Grady Gavel Gala" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    			<img src="images/design/Grady Debate Shirt@2x.png" alt="Grady Debate Shirt" onclick="openModal();currentSlide(15)" class="hover-shadow">
+  			</div>
+  			<div class="column">
+    			<img src="images/design/Love, Scoop@2x.png" alt="Love, Scoop" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				<img src="images/design/Grady Film Festival@2x.png" alt="Grady Film Festival" onclick="openModal();currentSlide(8)" class="hover-shadow">
+				<img src="images/design/Pushing Boundaires@2x.png" alt="Pushing Boundaires" onclick="openModal();currentSlide(12)" class="hover-shadow">
+    			<img src="images/design/Southern Gothic Chamber Theater@2x.png" alt=" Southern Gothic Chamber Theatre" onclick="openModal();currentSlide(16)" class="hover-shadow">
+    	
+  			</div>
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+  			<span class="close cursor" onclick="closeModal()">&times;</span>
+  				<div class="modal-content">
+    				<div class="mySlides">
+      					<div class="title">Almost, Maine</div>
+      					<div class="caption">2017<br><br>11" x 17" Poster<br>Grady High School Drama Club Play</div>
+						<img src="images/design/Almost Maine@2x.png" alt="Almost, Maine" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+      					<div class="title">The Deep End</div>
+      					<div class="caption">2019<br><br>Facebook Cover Photo<br><a href="https://www.facebook.com/thedeepend.nu/">Northwestern University News/Comedy Publication</a></div>
+							<img src="images/design/The Deep End@2x.png" alt="The Deep End" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+      					<div class="title">Coffeehouse</div>
+      					<div class="caption">2017-2018<br><br>11" x 17" Poster Series (4)<br>Grady High School Drama Club Performances</div>
+      						<img src="images/design/Coffeehouse@2x.png" alt="Coffeehouse" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+      					<div class="title">Love, Scoop</div>
+						<div class="caption">2018<br><br>Film Poster<br><a href="https://www.youtube.com/watch?v=v6LzB2TbCh0">Short Film</a></div>
+      						<img src="images/design/Love, Scoop@2x.png" alt="Love, Scoop" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Sexiled Together</div>
+						<div class="caption">2019<br><br>Film Logo<br>Short Film</div>
+      						<img src="images/design/Sexiled Together@2x.png" alt="Sexiled Together" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">The Deep End</div>
+						<div class="caption">2019<br><br>Logo<br><a href="https://www.facebook.com/thedeepend.nu/">Northwestern University News/Comedy Publication</a></div>
+      						<img src="images/design/The Deep End Logo@2x.png" alt="The Deep End Logo" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">The Other Side</div>
+						<div class="caption">2018<br><br>11" x 17" Poster<br>Grady High School Drama Club Play</div>
+      						<img src="images/design/The Other Side@2x.png" alt="The Other Side" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Grady Film Festival</div>
+						<div class="caption">2018<br><br>11" x 17" Poster<br>Grady High School Film Festival</div>
+      						<img src="images/design/Grady Film Festival@2x.png" alt="Grady Film Festival" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Guide to Grady Drama</div>
+						<div class="caption">2018<br><br>8.5" x 11" Infographic<br>Grady High School Drama Club</div>
+      						<img src="images/design/Guide_to_Grady_Drama.png" alt="Guide to Grady Drama" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">3 Day Plays</div>
+						<div class="caption">2016-2018<br><br>11" x 17" Poster Series (4)<br>Grady High School Drama Club Plays</div>
+      						<img src="images/design/3 Day Plays@2x.png" alt="3 Day Plays" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Gaval Gala</div>
+						<div class="caption">2016<br><br>Logo and Program<br>Grady High School Mock Trial Philanthropy Gala</div>
+      						<img src="images/design/Grady Gaval Gala@2x.png" alt="Gaval Gala" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Pushing Boundaires</div>
+						<div class="caption">2017<br><br>11" x 17" Poster<br>Grady High School Drama Club Play</div>
+      						<img src="images/design/Pushing Boundaires@2x.png" alt="Pushing Boundaires" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">South Pacific</div>
+						<div class="caption">2018<br><br>11" x 17" Poster<br>Grady High School Drama Club Musical</div>
+      						<img src="images/design/South Pacific@2x.png" alt="South Pacific" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">First Year Filmmakers</div>
+						<div class="caption">2018<br><br>Instagram Story Graphic<br>Northwestern University Radio/Television/Film Department Screening</div>
+      						<img src="images/design/First Year Filmmakers@2x.png" alt="First Year Filmmakers" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Grady Debate Shirt</div>
+						<div class="caption">2018<br><br>T-Shirt Design<br>Grady High School Speech and Debate Team</div>
+      						<img src="images/design/Grady Debate Shirt@2x.png" alt="Grady Debate Shirt" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Southern Gothic Chamber Theatre</div>
+						<div class="caption">2016<br><br>11" x 17" Poster<br>Grady High School Drama Club</div>
+      						<img src="images/design/Southern Gothic Chamber Theater@2x.png" alt="Southern Gothic Chamber Theatre" style="width:100%">
+    				</div>
+					<div class="mySlides">
+      					<div class="title">Grady Drama Season Pass</div>
+						<div class="caption">2016<br><br>17" x 24" Poster<br>Grady High School Drama Club</div>
+      						<img src="images/design/Grady Drama Season Pass@2x.png" alt="Grady Drama Season Pass" style="width:100%">
+    				</div>
+				</div>
+
+			<!-- Next/previous controls -->
+    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+    		<div class="caption-container">
+      			<p id="title"></p>
+				<p id="caption"></p>
+    		</div>
+		</div>
+		
+		<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	</section>
+	
+	
+	<footer>
+		<div class="socials">
+			<a href="https://vimeo.com/user94368193" title="Vimeo" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+			<a href="https://www.instagram.com/dhruvohno/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.imdb.com/name/nm7416997/?ref_=fn_al_nm_1" title="IMBd" target="_blank"><i class="fab fa-imdb"></i></a>
+			<a href="https://www.linkedin.com/in/dhruv-mehra-84b006187" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.facebook.com/dhruv.mehra.79230" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.youtube.com/channel/UCPyWI0IGNAqEx4sQTSIH9IQ" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="mailto:dhruvmehra8@gmail.com" title="Email" target="_top"><i class="fas fa-envelope"></i></a>
+		</div>
+		<p id="copyright">2019</p>
+	</footer>
+	
+</body>
+</html>
