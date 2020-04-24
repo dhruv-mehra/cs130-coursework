@@ -1,0 +1,115 @@
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+	font-family: Overlock;
+	background-color: #F4F9E9;
+	color: #153243;
+	margin: 0px;	
+}
+
+h1, h2 {
+	font-family: Josefin Slab;
+	text-align: center;
+}
+h1{
+	font-size: 5em;
+	margin: 10px 0;
+	color: #F4F9E9;
+
+}
+h2{
+	font-size: 2em;
+	color: #0090C1;
+}
+h3{
+	font-size: 1.25em;
+	margin: 10px 0;
+	color: #9E6240;
+	
+}
+
+.bio{
+	padding:20px 0 0;
+	font-style: normal;
+	text-align: left;
+}
+
+h2 ~ p{
+	text-align: center;
+	font-style: italic;
+}
+
+header, .projects, .work, .education, footer{
+	padding: 100px 15%;
+}
+.sites{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+	margin: 35px 0;
+}
+img{
+	width: 100%;
+}
+.projects a{
+	font-style: italic;
+}
+
+.work section{
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+	margin: 35px 0;
+}
+.left{
+	text-align: right;
+}
+
+footer ul{
+	list-style-type: none;
+	display: flex;
+    justify-content: center;
+	padding: 0;
+}
+
+.education section{
+	margin: 30px 0;
+	text-align: center;
+}
+
+header,.work, footer{
+	background-color:#153243;
+	color: #F4F9E9;
+	
+}
+footer li{
+	display: inline;
+	padding: 0 20px;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+a{
+	color:#9E6240;
+	text-decoration: none;
+	font-style: italic;
+}
+
+a:visited {
+	color:#004BA8
+}
+
+a:hover {
+	color:#0090C1;
+}
+
+
