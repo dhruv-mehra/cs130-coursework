@@ -1,0 +1,137 @@
+body{
+  font-family: nobel, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+  padding: auto;
+  height: 95vh;
+  border: 20px solid #75ffeb;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+}
+.h1, .h22{
+  font-size: 3em;
+  font-family: nobel, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding:0;
+  display: inline;
+  color: white;
+}
+.h22{
+  color: #7936e1;
+}
+h1{
+  font-size: 3em;
+  color: #75ffeb;
+  display: inline;
+}
+h2{
+  font-size: 2em;
+  display: inline;
+}
+.logo img{
+  width: 75px;
+  display: inline;
+}
+.logo{
+  margin: 25px;
+  font-family: lores-12-narrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav li{
+  display: inline;
+  padding: 0 10px;
+  font-style: italic;
+}
+nav a{
+  text-decoration: none;
+  color: #555555;
+
+}
+.welcome{
+  font-family: nobel, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+  width: 40%;
+  border: 3px solid #7936e1;
+  padding: 25px;
+  margin: 0px auto 0px;
+  color: #7936e1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.running{
+  color: white;
+  font-family: lores-12-narrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1.25em;
+}
+.welcome > p{
+  margin: 0px 0px 20px;
+}
+.countdown{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: lores-12-narrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+}
+.count p{
+  margin: 0px 30px;
+}
+.number{
+  font-size: 3.25em;
+  color: white;
+}
+.unit{
+  font-size: 1em;
+  font-style: normal;
+  color: white;
+}
+footer{
+  padding: 25px 0;
+  margin:0px;
+  font-size: .75em;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+.socials i, footer a{
+  font-size: 1.25em;
+  margin: 15px 3px;
+  color: #555555;
+  text-decoration: none;
+}
+.socials i:hover, a:hover{
+  color: #777777;
+}
+
+.copyright{
+  color: #555555;
+}
+
+@media screen and (max-width: 800px) {
+  nav{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+}
