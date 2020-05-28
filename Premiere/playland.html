@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/film.css">
         <link rel="stylesheet" href="CSS/gallery.css">
+        <link rel="stylesheet" href="CSS/carousel.css">
         <link rel="stylesheet" href="https://use.typekit.net/uus6pci.css">
         <script src="https://kit.fontawesome.com/56f76b372d.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,21 +108,31 @@
         </div>
         <div class="bts">
           <p>Behind the Scenes</p>
+          <main>
           <section class="cards">
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2007.JPG')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2008.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2013.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2014.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2018.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2020.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2022.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2023.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2024.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2026.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2029.jpg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2031.jpg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2007.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2008.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2013.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2014.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2018.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2020.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2022.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2023.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2024.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2026.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2029.jpeg')"></div>
+              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2031.jpeg')"></div>
           </section>
         </div>
+        <!-- preview panel -->
+        <section class="preview">
+            <div class="featured_image" style="background-image:url('Images/BTS/Playland/IMG_2007.jpeg')"></div>
+            <button class="close" id="close">&times;</button>
+            <button class="prev" id="prev">&lsaquo;</button>
+            <button class="next" id="next">&rsaquo;</button>
+        </section>
+      </main>
+        <!-- end preview panel -->
       <section class="film">
         <div class="presents">
           <img src="Images/Graphics/S22 New Logo FINAL-white.png" alt="logo"/>
@@ -144,5 +155,5 @@
       </section>
     </footer>
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="JS/carousel.js"></script>
 </html>
