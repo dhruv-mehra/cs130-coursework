@@ -19,10 +19,12 @@
             <a href="index.html"><img src="Images/Graphics/S22 New Logo FINAL-white.png" alt="logo"/></a>
             <h2>Premiere</h2>
           </div>
-          <div class"title">
-            <p class="h1">STAY IN WITH </p>
-            <h1> STUDIO</h1>
-            <p class="h22">22</p>
+          <div class"heading">
+            <p class="h0">STAY IN WITH </p>
+            <div class="h1">
+              <h1> STUDIO</h1>
+              <p class="h22">22</p>
+            </div>
           </div>
         </div>
         <nav>
@@ -56,10 +58,14 @@
         </div>
         <div class="specs">
           <ol>
-            <li>15 minutes |</li>
-            <li>Color |</li>
-            <li>1.37:1, 1.9:1 |</li>
-            <li>English |</li>
+            <li>15 minutes</li>
+            <div class="divider">|</div>
+            <li>Color</li>
+            <div class="divider">|</div>
+            <li>1.37:1, 1.9:1</li>
+            <div class="divider">|</div>
+            <li>English</li>
+            <div class="divider">|</div>
             <li>Drama</li>
           </ol>
         </div>
@@ -100,18 +106,92 @@
         </div>
         <div class="links">
           <p>Connect with the Film</p>
-          <article>
+          <div>
             <a href="">IMDb</a>
             <a href="">Website</a>
             <a href="">Social Media</a>
-          </article>
+          </div>
         </div>
         <div class="bts">
           <p>Behind the Scenes</p>
-          <main>
+          <!-- Slideshow container -->
+        <div class="carousel">
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2007.jpeg" style="width:100%">
+              <div class="text">Caroline</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2008.jpeg" style="width:100%">
+              <div class="text">Caroline Again</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2013.jpeg" style="width:100%">
+              <div class="text">Ariella and Jenna Yoga</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2014.jpeg" style="width:100%">
+              <div class="text">Ariella fell</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2018.jpeg" style="width:100%">
+              <div class="text">Leg kick kachow</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2020.jpeg" style="width:100%">
+              <div class="text">Conor the AC man</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2022.jpeg" style="width:100%">
+              <div class="text">Caught lacking</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2023.jpeg" style="width:100%">
+              <div class="text">Gregorian</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2024.jpeg" style="width:100%">
+              <div class="text">King Samuel</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2026.jpeg" style="width:100%">
+              <div class="text">Caught lip smacking</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2029.jpeg" style="width:100%">
+              <div class="text">Susan</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="Images/BTS/Playland/IMG_2031.jpeg" style="width:100%">
+              <div class="text">Haunted men</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <button class="close" id="close">&times;</button>
+          </div>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+          </div>
+        </div>
+
+        <main class ="gallery">
           <section class="cards">
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2007.jpeg')"></div>
-              <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2008.jpeg')"></div>
+              <div class="card" onclick="currentSlide(1)" style="background-image:url('Images/BTS/Playland/IMG_2007.jpeg')"></div>
+              <div class="card" onclick="currentSlide(2)" style="background-image:url('Images/BTS/Playland/IMG_2008.jpeg')"></div>
               <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2013.jpeg')"></div>
               <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2014.jpeg')"></div>
               <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2018.jpeg')"></div>
@@ -124,13 +204,14 @@
               <div class="card" style="background-image:url('Images/BTS/Playland/IMG_2031.jpeg')"></div>
           </section>
         </div>
+
         <!-- preview panel -->
-        <section class="preview">
+        <!-- <section class="preview">
             <div class="featured_image" style="background-image:url('Images/BTS/Playland/IMG_2007.jpeg')"></div>
             <button class="close" id="close">&times;</button>
             <button class="prev" id="prev">&lsaquo;</button>
             <button class="next" id="next">&rsaquo;</button>
-        </section>
+        </section> -->
       </main>
         <!-- end preview panel -->
       <section class="film">

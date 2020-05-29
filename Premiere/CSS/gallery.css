@@ -1,16 +1,12 @@
-body {
-    height:100%;
-    margin:0;
-    padding:0;
-}
-body * {
-    box-sizing: border-box;
+.gallery{
+  display: auto;
+  width: 100%;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     padding-left: 10px;
@@ -19,7 +15,6 @@ body * {
 
 .card {
     width: calc(25% - 10px);
-    height: calc(25% - 10px);
     min-height: 175px;
     background-size: cover;
     background-position: center;
@@ -32,16 +27,21 @@ body * {
 }
 
 /* Media Queries */
-@media (max-width: 900px) {
-    main .card {
-        width: calc(50% - 20px);
-        height: calc(50vh - 20px);
+@media (max-width: 1100px) {
+    .card {
+      width: calc(33% - 8px);
+      min-height: 200px;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 900px) {
     main .card {
-        width: calc(100% - 20px);
-        height: 70vh;
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        display: none;
     }
 }

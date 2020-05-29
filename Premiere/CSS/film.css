@@ -41,7 +41,7 @@ p{
 }
 /*//////////////////////credits////////////////////////*/
 .credits{
-  padding:25px 0px 75px;
+  padding:25px 0px 50px;
 }
 .credits p{
   font-size: 1em;
@@ -54,7 +54,7 @@ p{
   font-style: italic;
 }
 .poster{
-  padding: 50px;
+  padding: 25px 0px 50px;
 }
 .poster img{
   height: 80vh;
@@ -67,6 +67,11 @@ p{
 
 }
 /*//////////////////////specs////////////////////////*/
+.divider{
+  color: white;
+  font-size: 1.5em;
+  display: inline;
+}
 .specs li{
   display: inline;
   font-size: 1.25em;
@@ -75,7 +80,14 @@ p{
   font-style: normal;
   text-transform: uppercase;
   color: #75ffeb;
+  padding: 0px 10px;
 }
+
+ol{
+  margin: 0;
+  padding: 0;
+}
+
 /*//////////////////////warning////////////////////////*/
 .warning{
   padding: 0px 0px 75px;
@@ -145,8 +157,6 @@ p{
 .film iframe{
   border: 10px solid #75ffeb;
 }
-
-
 /*//////////////////////footer////////////////////////*/
 .foot{
   position: relative;
@@ -157,4 +167,67 @@ p{
 footer{
   background-color:#75ffeb;
   padding: 50px 0px 25px;
+}
+
+/*//////////////////////Responsiveness////////////////////////*/
+@media screen and (max-width: 900px) {
+  .title, .credits, .poster, .logline, .specs, .intro, .statement, .links, .warning, .final{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .bts{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .specs li{
+    display: block;
+    font-size: 1.5em;
+    padding: 5px 0px;
+  }
+  .divider{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 700px) {
+  .title, .credits, .poster, .logline, .specs, .intro, .statement, .links, .bts, .warning, .final, .film{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .h1{
+    display: block;
+    font-size: 1.3em;
+    padding: 0px 0px 25px;
+  }
+  .poster, .bts{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .poster img{
+    height: 100vh;
+  }
+  .film iframe{
+    border: none;
+  }
+
+@media screen and (max-width: 500px) {
+  .title, .credits, .poster, .logline, .specs, .intro, .statement, .links, .warning, .final, .film{
+    padding: 25px 5%;
+  }
+  nav li{
+    display: block;
+    padding: 10px;
+  }
+  .poster img{
+    width: 100%;
+    height: auto;
+  }
+  .links > p{
+    padding: 0px;
+  }
+
+  .links a{
+    display: block;
+    padding: 10px;
+  }
 }

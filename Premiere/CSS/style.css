@@ -10,7 +10,10 @@ body{
   color: white;
   text-align: center;
 }
-.h1, .h22{
+.heading{
+  display: inline;
+}
+.h0, .h22{
   font-size: 3em;
   font-family: nobel, sans-serif;
   font-weight: 800;
@@ -18,6 +21,9 @@ body{
   padding:0;
   display: inline;
   color: white;
+}
+.h1{
+  display: inline;
 }
 .h22{
   color: #7936e1;
@@ -125,13 +131,4 @@ footer{
 
 .copyright{
   color: #555555;
-}
-
-@media screen and (max-width: 800px) {
-  nav{
-    display: none;
-  }
-  .logo{
-    display: none;
-  }
 }
