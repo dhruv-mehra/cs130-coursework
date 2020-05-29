@@ -27,75 +27,21 @@
         </div>
         <nav>
           <ol>
-            <li><a href=HTML/bravas.html>Bravas</a>
-            <li><a href=HTML/boba.html>Boba</a>
-            <li><a href=HTML/bravas.html>Circut</a>
-            <li><a href=HTML/humanity.html>Finding Humanity</a>
-            <li><a href=playland.html>Playland</a>
-            <li><a href=HTML/release.html>Release</a>
+            <li><a href=>Bravas</a>
+            <li><a href=>Boba</a>
+            <li><a href=>Circut</a>
+            <li><a href=>Finding Humanity</a>
+            <li><a href="playland.html">Playland</a>
+            <li><a href=>Release</a>
           </ol>
         </nav>
       </header>
-
-      <section class="home">
-        <article class="welcome">
-          <p>premiere begins in...</p>
-          <div id="demo" class="running"></p>
-          <!-- <div class="countdown">
-            <div class="count">
-              <p class="number">25</p>
-              <p class="unit">DAYS</p>
-            </div>
-            <div class="count">
-              <p class="number">18</p>
-              <p class="unit">HOURS</p>
-            </div>
-            <div class="count">
-              <p class="number">10</p>
-              <p class="unit">MINUTES</p>
-            </div>
-            <div class="count">
-              <p class="number">34</p>
-              <p class="unit">SECONDS</p>
-            </div>
-          </div> -->
-          <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("June 13, 2020 19:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-
-              // Get today's date and time
-              var now = new Date().getTime();
-
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-              // Output the result in an element with id="demo"
-              document.getElementById("demo").innerHTML =
-              days + " DAYS " + hours + " HOURS "
-              + minutes + " MINUTES " + seconds + " SECONDS ";
-              // If the count down is over, write some text
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "ENTER";
-              }
-            }, 1000);
-          </script>
-        </article>
-      </section>
+      <article class="welcome">
+        <p>premiere begins in...</p>
+        <div id="demo"></div>
+      </article>
     </body>
-
-
-
-
+    
     <footer>
       <section class="socials">
         <a href="https://www.instagram.com/studio22_nu" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>

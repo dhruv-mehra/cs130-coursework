@@ -59,8 +59,7 @@ nav li{
 }
 nav a{
   text-decoration: none;
-  color: #555555;
-
+  color: #888888;
 }
 .welcome{
   font-family: nobel, sans-serif;
@@ -68,24 +67,14 @@ nav a{
   font-style: italic;
   font-size: 1.5em;
   text-align: center;
-  width: 40%;
+  width: 30%;
   border: 3px solid #7936e1;
   padding: 25px;
-  margin: 0px auto 0px;
+  margin: 50px auto 0px;
   color: #7936e1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.running{
-  color: white;
-  font-family: lores-12-narrow, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size:1.25em;
 }
 .welcome > p{
+  color: #7936e1;
   margin: 0px 0px 20px;
 }
 .countdown{
@@ -96,39 +85,77 @@ nav a{
   font-family: lores-12-narrow, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size:1.25em;
   margin: 20px;
 }
 .count p{
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 .number{
-  font-size: 3.25em;
+  font-size: 1.5em;
   color: white;
 }
 .unit{
-  font-size: 1em;
+  font-size: 0.75em;
   font-style: normal;
-  color: white;
+  color: #7936e1;
 }
 footer{
   padding: 25px 0;
   margin:0px;
   font-size: .75em;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -5%);
 }
 .socials i, footer a{
   font-size: 1.25em;
   margin: 15px 3px;
-  color: #555555;
+  color: #888888;
   text-decoration: none;
 }
 .socials i:hover, a:hover{
-  color: #777777;
+  color: #dddddd;
 }
 
 .copyright{
-  color: #555555;
+  color: #888888;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1100px) {
+  .welcome{
+    font-size: 1.25em;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .welcome{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcome{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .h1{
+    display: block;
+    font-size: 1.3em;
+    padding: 0px 0px 25px;
+  }
+  .welcome{
+    width: 50%;
+    margin: 25px auto 0px;
+  }
+  nav li{
+    display: none;
+  }
+@media screen and (max-width: 600px) {
+  .welcome{
+    width: 60%;
+  }
+@media screen and (max-width: 500px) {
+  .welcome{
+    width: 70%;
+
+  }
 }
