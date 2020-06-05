@@ -137,7 +137,7 @@ ol{
 }
 /*//////////////////////film////////////////////////*/
 .film{
-  padding: 75px 10% 100px;
+  padding: 75px 10%;
 }
 .film img{
   height: 75px;
@@ -152,11 +152,36 @@ ol{
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
-  padding: 0px 0px 75px;
+  padding: 0px 0px 50px;
 }
 .film iframe{
   border: 10px solid #75ffeb;
 }
+.countdown{
+  text-align: center;
+  width: 30%;
+  border: 3px solid #7936e1;
+  padding: 20px;
+  margin: 20px auto 0px;
+  color: #7936e1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size:2em;
+}
+.nextFilm{
+  padding: 30px;
+}
+.nextFilm a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
+}
+.nextFilm a:hover{
+  color: #75ffeb;
+}
+
 /*//////////////////////footer////////////////////////*/
 .foot{
   position: relative;
@@ -165,7 +190,7 @@ ol{
   transform: translate(0, 0);
 }
 footer{
-  background-color:#75ffeb;
+  background-color:white;
   padding: 50px 0px 25px;
 }
 
